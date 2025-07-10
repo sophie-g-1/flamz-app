@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HomepageLogo from "./assets/icon-homepage.svg";
+import NavLogo from "./assets/icon-logo.svg";
 
 const ChatApp = () => {
   const [prompt, setPrompt] = useState("");
@@ -40,9 +41,7 @@ const ChatApp = () => {
         className="top-0 start-0 m-3 flex items-center gap-2 absolute cursor-pointer"
         onClick={hideChat}
       >
-        <div className="rounded-full border-2 p-2 border-pink-500 aspect-square grid items-center">
-          <img src={HomepageLogo} height="70" width="70" className="" alt="" />
-        </div>
+        <img src={NavLogo} height="70" width="70" className="" alt="" />
         <p className="font-semibold text-2xl">Flamz</p>
       </div>
 
